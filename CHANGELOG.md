@@ -1,5 +1,11 @@
 # Changelog
 
+## [Unreleased]
+
+### Removed
+
+- remove package\_api\_docs
+
 ## [1.0.7] - 2024-04-13
 
 ### Removed
@@ -25,6 +31,7 @@
 
 - Prepare publish
 
+[Unreleased]: https://github.com/inlavigo/gg_is_flutter/compare/1.0.7...HEAD
 [1.0.7]: https://github.com/inlavigo/gg_is_flutter/compare/1.0.6...1.0.7
 [1.0.6]: https://github.com/inlavigo/gg_is_flutter/compare/1.0.5...1.0.6
 [1.0.5]: https://github.com/inlavigo/gg_is_flutter/compare/1.0.4...1.0.5
