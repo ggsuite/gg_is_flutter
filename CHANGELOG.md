@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+### Added
+
+- Add .gitattributes file
+
 ### Removed
 
 - remove package\_api\_docs
