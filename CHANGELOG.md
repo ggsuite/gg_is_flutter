@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+### Changed
+
+- kidney: changed references to git
+
 ### Removed
 
 - remove package\_api\_docs
