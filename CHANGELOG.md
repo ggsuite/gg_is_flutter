@@ -6,6 +6,10 @@
 
 - Add .gitattributes file
 
+### Changed
+
+- gg\_multi: changed references to git
+
 ### Removed
 
 - remove package\_api\_docs
