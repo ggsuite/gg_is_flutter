@@ -1,15 +1,15 @@
 name: gg_is_flutter
 description: Provides a function that detects if a directory contains a flutter project.
-version: 1.0.8
+version: 2.0.0
 repository: https://github.com/inlavigo/gg_is_flutter.git
 
 environment:
   sdk: ">=3.8.0 <4.0.0"
 
 dependencies:
-  gg_project_root: ^1.0.3
-  path: ^1.8.0
+  gg_project_root: ^2.0.0
+  path: ^1.9.1
 
 dev_dependencies:
-  lints: ^6.0.0
-  test: ^1.24.0
+  lints: ^6.1.0
+  test: ^1.31.2

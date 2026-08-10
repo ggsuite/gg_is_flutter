@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased]
+## 2.0.0 - 2026-08-08
 
 ### Added
 
@@ -8,35 +8,29 @@
 
 ### Removed
 
-- remove package\_api\_docs
+- remove package_api_docs
 
-## [1.0.7] - 2024-04-13
+## 1.0.7 - 2024-04-13
 
 ### Removed
 
-- dependency to gg\_install\_gg, remove ./check script
+- dependency to gg_install_gg, remove ./check script
 - dependency pana
 
-## [1.0.6] - 2024-04-11
+## 1.0.6 - 2024-04-11
 
 ### Added
 
 - Update dependencies
 
-## [1.0.5] - 2024-04-09
+## 1.0.5 - 2024-04-09
 
 ### Removed
 
 - 'Pipline: Disable cache'
 
-## [1.0.4] - 2024-04-09
+## 1.0.4 - 2024-04-09
 
 ### Changed
 
 - Prepare publish
-
-[Unreleased]: https://github.com/inlavigo/gg_is_flutter/compare/1.0.7...HEAD
-[1.0.7]: https://github.com/inlavigo/gg_is_flutter/compare/1.0.6...1.0.7
-[1.0.6]: https://github.com/inlavigo/gg_is_flutter/compare/1.0.5...1.0.6
-[1.0.5]: https://github.com/inlavigo/gg_is_flutter/compare/1.0.4...1.0.5
-[1.0.4]: https://github.com/inlavigo/gg_is_flutter/tag/%tag
