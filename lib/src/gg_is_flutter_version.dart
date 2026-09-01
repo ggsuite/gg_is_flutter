@@ -9,4 +9,4 @@
 // coverage:ignore-file
 
 /// The version of the `gg_is_flutter` package.
-const String ggIsFlutterVersion = '2.1.0';
+const String ggIsFlutterVersion = '2.1.1';
