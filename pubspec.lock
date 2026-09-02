@@ -194,12 +194,13 @@ packages:
     source: hosted
     version: "4.0.0"
   gg_args:
-    dependency: "direct overridden"
+    dependency: transitive
     description:
-      path: "../gg_args"
-      relative: true
-    source: path
-    version: "3.1.1"
+      name: gg_args
+      sha256: aa52bf0322fa315ea552e092a236394edd6ce403edc2cc29776d81bf787c8294
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.2.0"
   gg_capture_print:
     dependency: transitive
     description:
@@ -251,10 +252,11 @@ packages:
   gg_project_root:
     dependency: "direct main"
     description:
-      path: "../gg_project_root"
-      relative: true
-    source: path
-    version: "2.1.1"
+      name: gg_project_root
+      sha256: a14189a00b2282ba5c0d0c84444a99b452ba44a65ef6a48fdc1833a97b5c64b5
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.2.0"
   glob:
     dependency: transitive
     description:
