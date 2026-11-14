@@ -13,11 +13,10 @@ import 'package:test/test.dart';
 void main() {
   setUp(testResetIsFlutter);
 
-  final currentBefore = Directory.current;
-
-  tearDown(() {
-    Directory.current = currentBefore;
-  });
+  // No test changes Directory.current: the working directory belongs to the
+  // whole test process, and test files running at the same time read files
+  // relative to it. A zone answers for it instead where a test needs
+  // another one.
 
   group('IsFlutter', () {
     test('should work fine', () {
@@ -27,20 +26,21 @@ void main() {
 
     group('should throw', () {
       test('if pubspec.yaml not found', () {
-        final current = Directory.current;
         final tmp = Directory.systemTemp.createTempSync();
-        Directory.current = tmp;
-        expect(
-          () => isFlutter,
-          throwsA(
-            isA<Exception>().having(
-              (e) => e.toString(),
-              'toString',
-              'Exception: pubspec.yaml not found',
+        addTearDown(() => tmp.deleteSync(recursive: true));
+
+        IOOverrides.runZoned(() {
+          expect(
+            () => isFlutter,
+            throwsA(
+              isA<Exception>().having(
+                (e) => e.toString(),
+                'toString',
+                'Exception: pubspec.yaml not found',
+              ),
             ),
-          ),
-        );
-        Directory.current = current;
+          );
+        }, getCurrentDirectory: () => tmp);
       });
     });
 
@@ -48,8 +48,7 @@ void main() {
       group('should return true', () {
         test('if directory is a flutter project', () {
           final tmp = Directory.systemTemp.createTempSync();
-          final current = Directory.current;
-          Directory.current = tmp;
+          addTearDown(() => tmp.deleteSync(recursive: true));
           final pubspec = File(join(tmp.path, 'pubspec.yaml'));
           pubspec.writeAsStringSync('''
 name: test
@@ -60,15 +59,13 @@ environment:
   sdk: flutter
 ''');
           expect(isFlutterDir(tmp), isTrue);
-          Directory.current = current;
         });
       });
 
       group('should return false', () {
         test('if directory is not a flutter project', () {
           final tmp = Directory.systemTemp.createTempSync();
-          final current = Directory.current;
-          Directory.current = tmp;
+          addTearDown(() => tmp.deleteSync(recursive: true));
           final pubspec = File(join(tmp.path, 'pubspec.yaml'));
           pubspec.writeAsStringSync('''
 name: test
@@ -76,7 +73,6 @@ description: A new Flutter project.
 version: 1.0.0+1
 ''');
           expect(isFlutterDir(tmp), isFalse);
-          Directory.current = current;
         });
       });
     });
