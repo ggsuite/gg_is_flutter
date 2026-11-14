@@ -1,5 +1,15 @@
 # Changelog
 
+## 2.2.5 - 2026-11-14
+
+### Added
+
+- Add the blog post and index.jsonc
+
+### Changed
+
+- Leave the working directory alone in the tests
+
 ## 2.2.4 - 2026-11-06
 
 ## 2.2.3 - 2026-10-16
