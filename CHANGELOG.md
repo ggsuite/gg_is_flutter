@@ -2,12 +2,17 @@
 
 ## Unreleased
 
+### Added
+
+- Add the blog post and index.jsonc
+
+Add the blog post of the change
+Add index.jsonc
+Tighten the dependencies
+
 ### Changed
 
 - Leave the working directory alone in the tests
-
-A test set Directory.current for the whole test process while other test files read files relative to it; now and then one of them failed with a file that was not found
-The tests pass the directory, or answer for Directory.current in a zone (IOOverrides)
 
 ## 2.2.4 - 2026-11-06
 
