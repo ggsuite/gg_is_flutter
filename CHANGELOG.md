@@ -2,12 +2,16 @@
 
 ## Unreleased
 
-### Changed
+### Added
 
-- Migrate to the latest Dart SDK
+- Add a blog post about the SDK migration
 
 Require Dart 3.14
 Upgrade DNA, helix and dna_ggsuite
+
+### Changed
+
+- Migrate to the latest Dart SDK
 
 ## 2.2.5 - 2026-11-14
 
