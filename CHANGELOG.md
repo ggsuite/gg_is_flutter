@@ -1,5 +1,15 @@
 # Changelog
 
+## 2.3.0 - 2026-11-15
+
+### Added
+
+- Add a blog post about the SDK migration
+
+### Changed
+
+- Migrate to the latest Dart SDK
+
 ## 2.2.5 - 2026-11-14
 
 ### Added
