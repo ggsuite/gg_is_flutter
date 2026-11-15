@@ -1,13 +1,10 @@
 # Changelog
 
-## Unreleased
+## 2.3.0 - 2026-11-15
 
 ### Added
 
 - Add a blog post about the SDK migration
-
-Require Dart 3.14
-Upgrade DNA, helix and dna_ggsuite
 
 ### Changed
 
