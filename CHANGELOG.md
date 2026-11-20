@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+### Changed
+
+- Stay within major versions on dependency upgrades
+
 ## 2.3.0 - 2026-11-15
 
 ### Added
